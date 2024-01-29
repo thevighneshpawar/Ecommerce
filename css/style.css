@@ -483,7 +483,7 @@ body {
     z-index: 8888;
     top: 5rem;
     position: fixed;
-    right: 14rem;
+    right: 10rem;
     border: 0;
     font-size: 3.3rem;
     cursor: pointer;
@@ -642,15 +642,16 @@ body {
 }
 
 .hero-section >* img{
-  margin-top: -11rem;
-  margin-right: 2rem;
+  margin-top: -8rem;
+  margin-left: 4rem;
+  width: 95vw;
 }
 
 .hero-inner{
   justify-content: space-between;
   align-items: center;
   --flex-gap : 5rem;
-  margin-top: -3rem;
+  margin-top: 1rem;
   padding-bottom:4rem ;
 }
 .hero-info{
