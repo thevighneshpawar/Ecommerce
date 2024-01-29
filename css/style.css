@@ -583,3 +583,29 @@ body {
 }
 
 /* ===========Hero section Css============ */
+
+.hero-section{
+  width: 93vw;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  background-color: hsl(var(--clr-gray));
+  border-radius: 2rem;
+  padding-top: 5rem;
+
+}
+
+.hero-section >* img{
+  margin-top: -11rem;
+  margin-right: 2rem;
+}
+
+.hero-inner{
+  justify-content: space-between;
+  align-items: center;
+  --flex-gap : 5rem;
+  margin-top: -3rem;
+  padding-bottom:4rem ;
+}
+.hero-info{
+  display:none;
+}
