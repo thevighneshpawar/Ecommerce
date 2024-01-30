@@ -920,3 +920,83 @@ body {
     grid-template-areas: 'one two three four';
   }
 }
+
+/*============= Feature section============= */
+
+.feature-section{
+  width: 90vw;
+  margin-inline: auto;
+  border-radius: 2rem;
+  position: relative;
+  margin-top: 15rem;
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-inline: 4rem;
+  padding: 8rem 2rem 2rem 2rem;
+}
+
+.feature-section >* img{
+  margin-top: -18rem;
+  position: absolute;
+  right: -1.5rem;
+}
+
+.feature-info{
+  padding-inline: 1rem;
+  margin-top: 1rem;
+}
+
+/* ========media query Ipad============ */
+
+@media (min-width:35em) and (max-width:59em){
+
+  .feature-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+    text-align: left;
+    padding: 2rem 0;
+    page-break-inside: 7rem;
+  }
+
+  .smile{
+    display: block;
+    position: absolute;
+    padding-bottom: 1rem;
+  }
+  .lineheight2{
+    line-height: 5rem;
+  }
+  .feature-section >* img{
+    margin-top: -20rem;
+    position: absolute;
+    right: 5rem;
+  }
+}
+
+@media(min-width:59em){
+  .feature-section{
+    width: 95vw;
+    display: grid;
+    gap: 15rem;
+    z-index: 2;
+    grid-template-columns: repeat(2,1fr);
+    place-items: start;
+    padding: 4rem 7rem;
+    text-align: left;
+  }
+
+  .feature-section >* img{
+    margin-top: -28rem;
+    position: absolute;
+    right: 1rem;
+    z-index: -1;
+  }
+  .font-size{
+    font-size: 7rem;
+    line-height: 5.5rem;
+  }
+}
