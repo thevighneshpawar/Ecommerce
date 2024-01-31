@@ -453,6 +453,11 @@ body {
 
 /* =======Mobile=========== */
 @media (max-width: 35em) {
+  body{
+    margin-left:1rem;
+    overflow-x:hidden ;
+    
+  }
   .primary-navigation {
     position: fixed;
     flex-direction: column;
@@ -920,3 +925,248 @@ body {
     grid-template-areas: 'one two three four';
   }
 }
+
+/*============= Feature section============= */
+
+.feature-section{
+  width: 90vw;
+  margin-inline: auto;
+  border-radius: 2rem;
+  position: relative;
+  margin-top: 15rem;
+  display: grid;
+  gap: 1rem;
+  place-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding-inline: 4rem;
+  padding: 8rem 2rem 2rem 2rem;
+}
+
+.feature-section >* img{
+  margin-top: -15rem;
+  position: absolute;
+  right: -1.5rem;
+}
+
+.feature-info{
+  padding-inline: 1rem;
+  margin-top: 1rem;
+}
+
+/* ========media query Ipad============ */
+
+@media (min-width:35em) and (max-width:59em){
+
+  .feature-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+    z-index: 2;
+    text-align: left;
+    padding: 2rem 0;
+    page-break-inside: 7rem;
+  }
+
+  .smile{
+    display: block;
+    position: absolute;
+    padding-bottom: 1rem;
+  }
+  .lineheight2{
+    line-height: 5rem;
+  }
+  .feature-section >* img{
+    margin-top: -20rem;
+    position: absolute;
+    right: 5rem;
+    z-index: -1;
+  }
+}
+
+@media(min-width:59em){
+  .feature-section{
+    width: 95vw;
+    display: grid;
+    gap: 15rem;
+    z-index: 2;
+    grid-template-columns: repeat(2,1fr);
+    place-items: start;
+    padding: 4rem 7rem;
+    text-align: left;
+  }
+
+  .feature-section >* img{
+    margin-top: -28rem;
+    position: absolute;
+    right: 1rem;
+    z-index: -1;
+  }
+  .font-size{
+    font-size: 7rem;
+    line-height: 5.5rem;
+  }
+}
+/*         <!-- ======================== Best Seller Product start===================================== --> */
+
+
+.best-product{
+  padding-block:5rem ;
+  text-align: center;
+  overflow: hidden;
+}
+
+.best-seller{
+  overflow: hidden;
+  width: 90vw;
+  margin-inline: auto;
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+  grid-template-areas: 
+  'one'
+  'two'
+  'three'
+  'four'
+  'five'
+  'six'
+  'seven'
+  'eight';
+}
+
+.best-seller:nth-child(1){
+  grid-area: one;
+}
+.best-seller:nth-child(2){
+  grid-area:two;
+}
+.best-seller:nth-child(3){
+  grid-area:three;
+}
+.best-seller:nth-child(4){
+  grid-area:four;
+}
+.best-seller:nth-child(5){
+  grid-area: five;
+}
+.best-seller:nth-child(6){
+  grid-area: six;
+}
+.best-seller:nth-child(7){
+  grid-area: seven;
+}
+.best-seller:nth-child(8){
+  grid-area: eight;
+}
+
+.product{
+  text-align: left;
+  gap:1rem;
+  cursor: pointer;
+  position: relative;
+  overflow-x:hidden ;
+
+}
+
+.product:hover{
+  color: hsl(var(--clr-red));
+}
+
+.product-details{
+  position: absolute;
+  height: 25%;
+  place-items: center;
+  font-size:1.5rem ;
+  gap: 0rem;
+  width: 10%;
+  right: 0rem;
+  top: 0;
+  border-radius: 0.5rem;
+  transform: translateX(120%);
+  transition: transform 250ms ease-in-out;
+}
+
+.product:hover .product-details{
+  transform: translateX(0%);
+}
+
+.product > img{
+  border-radius: 2rem;
+}
+
+.letter-spacing{
+  letter-spacing: -1px;
+  font-size: 2.5rem;
+}
+
+
+/* ============Ipad================= */
+
+@media (min-width:35em) and (max-width:59em) {
+  
+  .best-seller{
+    padding-block: 2rem;
+    grid-template-areas: 
+    'one two'
+    'three four'
+    'five six'
+    'seven eight';
+  }
+
+  
+}
+
+
+/* ============== Desktop ============= */
+
+@media (min-width:59em){
+
+  .best-seller{
+    width: 95vw;
+    margin-inline: auto;
+    grid-template-areas: 
+    'one two three four'
+    'five six seven eight';
+    padding-block: 2rem;
+  }
+
+  
+}
+
+
+
+/* <!-- ======================== Best Seller Product End===================================== --> */
+
+
+/* ========== Feature section 2 Start ===================== */
+
+
+.watch-img{
+ 
+  top: 5rem;
+  left: 0;
+   width: 100%;
+ }
+
+@media (min-width:35em) and (max-width:59em) {
+  
+  .watch-img{
+   top: 4rem;
+   right: -12rem;
+    width: 70%;
+  }
+  
+}
+
+@media (min-width:59em)  {
+  
+  .watch-img{
+    position: absolute;
+   top: 8rem;
+   left: 15rem;
+    width: 50%;
+  }
+  
+}
+
+/* ========== Feature section 2  End  ==================== */
