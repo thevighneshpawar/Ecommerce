@@ -453,10 +453,9 @@ body {
 
 /* =======Mobile=========== */
 @media (max-width: 35em) {
-  /* body{
-    margin-left:1rem;
+  .primary-header{
     overflow-x:hidden ;
-  } */
+  } 
   .primary-navigation {
     position: fixed;
     flex-direction: column;
@@ -647,7 +646,7 @@ body {
 
 .hero-section >* img{
   margin-top: -8rem;
-  margin-left: 4rem;
+  margin-left: 2rem;
   width: 95vw;
 }
 
@@ -873,6 +872,8 @@ body {
 
 /* ===========Service section========== */
 
+
+
 .service-section{
   width: 90vw;
   margin-inline: auto;
@@ -923,6 +924,18 @@ body {
     gap: 5rem;
     grid-template-areas: 'one two three four';
   }
+
+  .service{
+    grid-template-areas: 'one two';
+  }
+  
+  .service:nth-child(1){
+    grid-area: one;
+  }
+  
+  .service:nth-child(2){
+    grid-area: two;
+  }
 }
 
 /*============= Feature section============= */
@@ -945,7 +958,7 @@ body {
 .feature-section >* img{
   margin-top: -15rem;
   position: absolute;
-  right: -1.5rem;
+  right: -0.5rem;
 }
 
 .feature-info{
