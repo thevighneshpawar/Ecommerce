@@ -24,6 +24,7 @@
 }
 
 .contact-form input{
+    width: 100%;
     border: 0;
     padding: 1rem 2rem;
     border-radius: 2rem;
@@ -69,6 +70,7 @@
     .contact-section{
         grid-template-areas:'one two' ;
     }
+
 
     .contact-section:nth-child(1){
         grid-area:one ;
