@@ -222,3 +222,36 @@ select{
     padding-inline: 1rem;
     padding-bottom: 2rem;
 }
+
+/* Category list */
+
+.category-list > i{
+    font-size: 2rem;
+    transform: rotate(0deg);
+    transition: transform 300ms ease-in-out;
+}
+
+.category-list > i[data-category="true"]{
+    transform: rotate(90deg);
+}
+
+.shop-category-list{
+    overflow-y: hidden;
+}
+.sidebar-nav{
+    margin: 0;
+    padding: 0;
+    padding-inline: 2.5rem;
+    list-style-type: none;
+    --grid-gap:0.8rem;
+    transform: translateY(-100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.sidebar-nav[data-category="true"]{
+    transform: translateY(0%);
+}
+
+.sidebar-nav a{
+    text-decoration: none;
+}
